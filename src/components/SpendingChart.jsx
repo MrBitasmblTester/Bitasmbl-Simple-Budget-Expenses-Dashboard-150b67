@@ -1,0 +1,1 @@
+import React from 'react';import {useSelector}from 'react-redux';const SpendingChart=()=>{const items=useSelector(s=>s.transactions.items);const data=items.reduce((m,t)=>m,[[]]);return(<section><h2>Spending Chart</h2><div>{/* draw chart with data */}</div></section>);};export default SpendingChart;
