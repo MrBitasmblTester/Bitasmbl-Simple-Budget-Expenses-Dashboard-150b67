@@ -1,0 +1,1 @@
+import {createSlice} from '@reduxjs/toolkit';const slice=createSlice({name:'transactions',initialState:{items:[]},reducers:{setTransactions(s,a){s.items=a.payload;},addTransaction(s,a){s.items.push(a.payload);}}});export const{setTransactions,addTransaction}=slice.actions;export default slice.reducer;
